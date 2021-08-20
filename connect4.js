@@ -70,7 +70,7 @@ function placeInTable(y, x) {
   const piece = document.createElement('div');
   piece.classList.add('piece');
   piece.classList.add(`p${currPlayer}`);
-  //piece.style.top = 50 * (y + 2);
+ 
 
   const spot = document.getElementById(`${y}-${x}`);
   spot.append(piece);
@@ -79,7 +79,7 @@ function placeInTable(y, x) {
 /** endGame: announce game end */
 
 function endGame(msg) {
-  alert(msg);
+  
   const endMessage = document.getElementById('end-message');
   endMessage.innerText = 'GAME OVER!!'; 
   
@@ -131,8 +131,7 @@ function checkForWin() {
     //  - cells: list of four (y, x) cells
     //  - returns true if all are legal coordinates & all match currPlayer
 
-    return cells.every(
-      ([y, x]) =>
+    return cells.every(([y, x]) =>
         y >= 0 &&
         y < HEIGHT &&
         x >= 0 &&
