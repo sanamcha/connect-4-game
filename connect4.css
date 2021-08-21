@@ -24,7 +24,6 @@ p{
 /* pieces are div within game table cells: draw as colored circles */
 
 .piece {
-  /* margin: 5px; */
   width: 100%;
   height: 100%;
   border-radius: 10%;
@@ -35,7 +34,7 @@ p{
 }
 
 .piece.p2 {
-  background-color:purple;css c
+  background-color:purple;
 }
 
 /* column-top is table row of clickable areas for each column */
