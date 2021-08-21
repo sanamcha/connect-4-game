@@ -16,8 +16,8 @@ p{
 }
 
 #board td {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border: solid 2px rgb(13, 6, 19);
 }
 
@@ -35,7 +35,7 @@ p{
 }
 
 .piece.p2 {
-  background-color:purple;
+  background-color:purple;css c
 }
 
 /* column-top is table row of clickable areas for each column */
